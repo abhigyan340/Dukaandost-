@@ -42,8 +42,8 @@ dukaandost/
 │       ├── credit.js     # record_credit_payment, get_customer_balance
 │       └── reports.js    # top_selling_products, supplier_order_list, daily_closing_summary
 ├── tests/
-│   ├── billing.test.js   # 9 tests: preview, confirm, stock deduction, GST, limits, rollback
-│   ├── inventory.test.js # 9 tests: update stock, low stock thresholds, expiry windows
+│   ├── billing.test.js   # 11 tests: preview, confirm, stock deduction, GST, limits, rollback
+│   ├── inventory.test.js # 12 tests: update stock, low stock thresholds, expiry windows
 │   └── credit.test.js    # 7 tests: balance formula, fuzzy matching, overpayments, payments
 ├── data/
 │   └── .gitkeep          # Tracks data directory; dukaandost.db is gitignored
@@ -199,7 +199,7 @@ Execute the complete test suite across billing, inventory, and credit modules:
 ```bash
 npm test
 ```
-All 25 tests run against an in-memory SQLite database (`:memory:`) without altering stored production data.
+All 30 tests run against an in-memory SQLite database (`:memory:`) without altering stored production data.
 
 ### 5. Launch CLI Chat
 Start the interactive DukaanDost assistant:
